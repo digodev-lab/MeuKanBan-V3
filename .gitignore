@@ -1,0 +1,28 @@
+# Resultados gerados localmente
+/build/
+*.test
+*.test.exe
+*.out
+*.log
+*.tmp
+*.novo
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Backups e dados pessoais; nunca publicar
+kanban.json
+pomodoro.json
+pixel-runner.json
+kanban-backup*.json
+MeuKanban_backup_*.json
+
+# Binários compilados localmente (exceto o original desta versão)
+*.exe
+!/dist/MeuKanban_Pro_V3.exe
+
+# Segredos locais
+.env
+.env.*
+!.env.example

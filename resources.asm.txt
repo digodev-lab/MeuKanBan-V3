@@ -1,0 +1,42 @@
+  .section .rsrc$01,"dr"
+  .p2align 2
+rsrc_root:
+  .long 0, 0
+  .short 0, 0, 0, 2
+  .long 3
+  .long 0x80000000 + rsrc_icon - rsrc_root
+  .long 14
+  .long 0x80000000 + rsrc_group - rsrc_root
+rsrc_icon:
+  .long 0, 0
+  .short 0, 0, 0, 1
+  .long 1
+  .long 0x80000000 + rsrc_icon_lang - rsrc_root
+rsrc_group:
+  .long 0, 0
+  .short 0, 0, 0, 1
+  .long 1
+  .long 0x80000000 + rsrc_group_lang - rsrc_root
+rsrc_icon_lang:
+  .long 0, 0
+  .short 0, 0, 0, 1
+  .long 1033
+  .long rsrc_icon_entry - rsrc_root
+rsrc_group_lang:
+  .long 0, 0
+  .short 0, 0, 0, 1
+  .long 1033
+  .long rsrc_group_entry - rsrc_root
+rsrc_icon_entry:
+  .rva icon_blob
+  .long 2833, 0, 0
+rsrc_group_entry:
+  .rva group_blob
+  .long 20, 0, 0
+  .section .rsrc$02,"dr"
+  .p2align 2
+icon_blob:
+  .incbin "assets/resource_icon.bin"
+  .p2align 2
+group_blob:
+  .incbin "assets/resource_group.bin"
