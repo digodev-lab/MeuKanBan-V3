@@ -3,6 +3,8 @@
 Aplicativo **nativo e offline para Windows 11 (64 bits)** que reúne gerenciamento de projetos, quadro Kanban, Pomodoro com ruído branco e um minijogo Pixel Runner. Desenvolvido em **Go com a API Win32/GDI**, sem Electron, navegador, PowerShell, .NET ou serviço na nuvem.
 
 > **Estado do projeto:** o código-fonte da V3 foi recuperado do pacote original do projeto. A compilação cruzada e os 13 testes unitários disponíveis passaram; a experiência completa **ainda precisa de validação manual em um Windows 11 real** antes de uma divulgação ampla.
+> <img width="1220" height="784" alt="kanban_app" src="https://github.com/user-attachments/assets/3ecacfd4-f1f5-4cec-9bc0-89cb5972a362" />
+
 
 ## Recursos
 
